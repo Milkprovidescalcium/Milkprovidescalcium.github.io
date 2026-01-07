@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nico's birthday omy god it's my birthday that is happening THIS </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap">
+
+
+  <style>
+    summary {
+      font-size: 20px;
+
+    }
+
+    .wish-list-dropdown {
+      font-size: 40px;
+
+      width: 0px;
+    }
+
+    .book-list li {
+      font-size: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+      /*removes default padding */
+
+    }
+
+    li {
+      font-size: 20px;
+
+    }
+
+    .list-content li {
+      padding: 6px 10px;
+      margin: 5px 0;
+    }
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+
+      cursor: pointer;
+      list-style: none;
+    }
+
+
+    summary:hover {
+      opacity: 0.6;
+
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+
+
+
+
+    summary::after {
+      content: "▶";
+      transition: transform 0.2s;
+      font-size: 0.8em;
+    }
+
+
+    details[open]>summary::after {
+      transform: rotate(90deg);
+    }
+
+    body {
+      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+      height: 200px;
+      /* Set a height to make the gradient visible */
+      width: 100%;
+
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+
+
+    }
+
+    .list-content {
+      border: 10px solid rgb(255, 0, 162);
+      background-color: rgb(234, 233, 233);
+
+      width: fit-content;
+      max-width: 90%;
+      padding: 10px;
+
+    }
+
+    .book-cover {
+      width: 100px;
+      height: 150px;
+      background-color: lightgray;
+      margin: 10px 0;
+      overflow: hidden;
+      background-size: cover;
+
+      background-position: center;
+      transition: transform .3s ease, background-size .3s ease;
+      transform-origin: center;
+    }
+
+    .book-cover:hover {
+      transform: scale(1.05);
+    }
+
+
+
+    .book-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .3s ease;
+    }
+
+    .book-cover img:hover {
+      transform: scale(1.2);
+    }
+
+    #almond {
+      background-image: url('almond.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #eastOfEden {
+      background-image: url('eastOfEden.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #tenthOfDecember {
+      background-image: url('tenthOfDecember.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #whiteNights {
+      background-image: url('whiteNights.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #flowersForAlgernon {
+      background-image: url('flowersForAlgernon.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .intro-paragraph {
+      font-size: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease;
+      transform-origin: left center;
+      display: inline-block;
+    }
+
+    .intro-paragraph:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Nico's Birthday!!!</h1>
+  <h2>his wish list!!!</h2>
+  <p class="intro-paragraph">Hi guys, tysm so much!! If you really really really wanted to get something and don't know
+    what to get.. Here's a
+    list of things! <br><span style="font-weight:bold;">REMEMBER YOU DONT HAVE TO GET ME ANYTHING!, A BIG SMOOCH ON THE
+      LIPS WILL DO</span></p>
+  <details open>
+    <summary class="wish-list-dropdown">List </summary>
+    <div class="list-content">
+      <ul>
+        <li>
+          <details>
+            <summary class="books-dropdown">Books! </summary>
+            <p>My current 2 read (u can get anything u'll think I'd like tho):</p>
+            <ul class="book-list">
+              <li>
+                <details>
+                  <summary>East of Eden - John Steinbeck</summary>
+                  <div class="book-cover" id="eastOfEden"></div>
+                  <p>OMG ITS BIBLE FANFICTION. I don't know that much about it but<br>all the performative guys seem to
+                    be reading it</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Tenth of December - Louise Erdrich</summary>
+                  <div class="book-cover" id="tenthOfDecember"></div>
+                  <p>A collection of short stories.. seems pretty good</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Almond - Sohn Won-pyung</summary>
+                  <div class="book-cover" id="almond"></div>
+                  <p>About this guy who has almonds in his head or something..<br> I heaard it's good</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <div class="book-cover" id="whiteNights"></div>
+                  <summary>White Nights - Fyodor Dostoevsky</summary>
+                  <p>THE OG CHUD !! I NEED to read this book🙏🙏</p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <div class="book-cover" id="flowersForAlgernon"></div>
+                  <summary>Flowers for Algernon - Daniel Keyes</summary>
+                  <p>Heard it's prettyy good</p>
+                </details>
+              </li>
+
+
+
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary class="giftCards">Gift Cards! </summary>
+            <ul class="gift-card-list">
+              <li>Steam
+              <li>Indigo (or any bookstore)</li>
+              <li>Burger King</li>
+              <li>Anywhere</li>
+
+
+            </ul>
+          </details>
+        </li>
+        <li>Black Choker</li>
+        <li>Writing stationary</li>
+        <li>Keychain (for my keys)</li>
+        <li>A Secret Surprise...</li>
+
+
+      </ul>
+
+
+    </div>
+  </details>
+
+
+  <script>
+
+  </script>
+</body>
+
+</html>
